@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angga Saputra | Software Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Menggunakan font Poppins untuk tampilan modern -->
+    <!-- Tipografi Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library untuk Animasi Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-down" data-aos-duration="800">
             <div class="logo">Angga<span>.dev</span></div>
             <ul class="nav-links">
                 <li><a href="#about">Tentang</a></li>
@@ -22,9 +26,10 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="about" class="hero">
-            <div class="hero-content">
-                <p class="subtitle">Halo, saya</p>
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <p class="subtitle"><i class="fa-solid fa-terminal"></i> Halo, saya</p>
                 <h1>Angga Saputra</h1>
                 <h2 class="role">Mahasiswa Teknik Informatika & Pengembang Perangkat Lunak</h2>
                 <p class="description">
@@ -32,60 +37,82 @@
                     Membangun solusi efisien dari tingkat basis hingga antarmuka pengguna.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">Lihat Proyek</a>
-                    <a href="https://github.com/" target="_blank" class="btn secondary">GitHub Profile</a>
+                    <a href="#projects" class="btn primary"><i class="fa-solid fa-folder-open"></i> Lihat Proyek</a>
+                    <a href="https://github.com/" target="_blank" class="btn secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/anggasaputranb" target="_blank" class="btn secondary linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
                 </div>
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section id="skills" class="skills-section">
-            <h2 class="section-title">Keahlian Teknis</h2>
+            <h2 class="section-title" data-aos="zoom-in">Keahlian Teknis</h2>
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-code skill-icon"></i>
                     <h3>C++ Programming</h3>
-                    <p>Pengembangan aplikasi CLI, manajemen memori, dan algoritma logika.</p>
+                    <p>Pengembangan aplikasi CLI, manajemen memori, algoritma logika, dan pemrograman struktural tingkat menengah.</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-brands fa-linux skill-icon"></i>
                     <h3>Linux System Admin</h3>
-                    <p>Konfigurasi Debian, Bash scripting, firewall, dan DHCP server.</p>
+                    <p>Konfigurasi lingkungan Debian, manipulasi shell Bash, manajemen user, firewall, dan setup DHCP server.</p>
                 </div>
-                <div class="skill-card">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-laptop-code skill-icon"></i>
                     <h3>Web Development</h3>
-                    <p>HTML5, CSS3, arsitektur responsif, dan integrasi aset visual.</p>
+                    <p>HTML5, CSS3, arsitektur responsif, dan integrasi aset visual untuk membangun landing page modern.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects" class="projects-section">
-            <h2 class="section-title">Proyek Unggulan</h2>
+            <h2 class="section-title" data-aos="zoom-in">Proyek Unggulan</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="100">
                     <div class="project-info">
-                        <h3>Simulasi Kinematika Fisika</h3>
-                        <p>Aplikasi berbasis web untuk memvisualisasikan kecepatan, sudut elevasi, dan gravitasi secara interaktif.</p>
+                        <h3><i class="fa-solid fa-rocket"></i> Simulasi Kinematika Fisika</h3>
+                        <p>Aplikasi web interaktif memvisualisasikan kecepatan, sudut elevasi, dan gravitasi. Terinspirasi dari model simulasi saintifik.</p>
                         <span class="tech-stack">Web Technologies</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="200">
                     <div class="project-info">
-                        <h3>Inventory Management CLI</h3>
-                        <p>Sistem manajemen inventaris command-line terstruktur yang dibangun dengan C++.</p>
+                        <h3><i class="fa-solid fa-box-archive"></i> Inventory Management</h3>
+                        <p>Sistem manajemen inventaris rumah tangga berbasis CLI. Memanfaatkan struktur input/output dan logika kondisional.</p>
                         <span class="tech-stack">C++</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left" data-aos-delay="300">
                     <div class="project-info">
-                        <h3>AgroFarm Landing Page</h3>
-                        <p>Desain dan pengembangan antarmuka web responsif untuk bisnis sektor pertanian.</p>
+                        <h3><i class="fa-solid fa-leaf"></i> AgroFarm Landing Page</h3>
+                        <p>Desain antarmuka web responsif untuk bisnis sektor pertanian, mengintegrasikan elemen visual dan navigasi modern.</p>
                         <span class="tech-stack">HTML & CSS</span>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Contact Section (Baru) -->
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <h2 class="section-title">Mari Berkolaborasi</h2>
+            <p>Tertarik untuk mendiskusikan teknologi, jaringan, atau peluang pengembangan perangkat lunak?</p>
+            <a href="mailto:emailanda@gmail.com" class="btn primary mt-2"><i class="fa-solid fa-paper-plane"></i> Kirim Pesan</a>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Angga Saputra, Dibangun untuk praktik Git & Version Control.</p>
+        <p>&copy; 2026 Angga Saputra. Dibangun untuk praktik Git & Version Control.</p>
     </footer>
+
+    <!-- Inisialisasi Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animasi hanya berjalan satu kali saat di-scroll
+            offset: 100 // Jarak (px) sebelum animasi dimulai
+        });
+    </script>
 </body>
 </html>
